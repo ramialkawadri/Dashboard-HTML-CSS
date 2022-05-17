@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Nav -->
+    <nav class="navigation-bar">
+      <a href="#" class="logo"></a>
+      <div class="nav-container">
+        <div class="input-with-icon">
+          <div class="input-icon">
+            <ion-icon name="search-outline"></ion-icon>
+          </div>
+          <input type="text" placeholder="Search for transasction, item, etc" />
+          <button class="btn btn--primary">Search</button>
+        </div>
+
+        <!-- The right side -->
+        <div class="nav-user">
+          <div class="nav-user-icon">
+            <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+          </div>
+
+          <div class="nav-user-icon">
+            <ion-icon name="notifications-outline"></ion-icon>
+          </div>
+
+          <div class="nav-user-profile">
+            <img
+              src="img/profile-picture.jpg"
+              alt="Profile picture"
+              class="nav-profile-picture"
+            />
+            <ion-icon name="chevron-down-outline"></ion-icon>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Menu -->
+    <menu class="main-menu">
+      <ul class="main-menu-list">
+        <li class="primary-color"><ion-icon name="grid"></ion-icon></li>
+        <li><ion-icon name="cart"></ion-icon></li>
+        <li><ion-icon name="document-text"></ion-icon></li>
+        <li><ion-icon name="settings"></ion-icon></li>
+      </ul>
+
+      <ul class="main-menu-list">
+        <li><ion-icon name="alert-circle"></ion-icon></li>
+        <li><ion-icon name="exit-outline"></ion-icon></li>
+      </ul>
+    </menu>
+
+    <!-- Main content -->
+    <main class="dashboard">
+      <h1 class="header-primary">Dashboard</h1>
+
+      <div class="statistics">
+        <div class="statistic primary-statistic">
+          <div class="statistic-graphics">
+            <div class="statistic-icon">
+              <ion-icon name="eye"></ion-icon>
+            </div>
+            <div class="statistic-graph-container">
+              <div class="statistic-graph"></div>
+            </div>
+          </div>
+
+          <div class="statistic-info">
+            <div class="statistic-header">Total Views</div>
+            <div class="statistic-number">308.402</div>
+
+            <div class="statistic-bottom">Start from 1 Jan 2021</div>
+          </div>
+        </div>
+
+        <div class="statistic">
+          <div class="statistic-graphics">
+            <div class="statistic-icon color-green">
+              <ion-icon name="briefcase"></ion-icon>
+            </div>
+            <div class="statistic-graph-container">
+              <div class="statistic-graph graph-down"></div>
+            </div>
+          </div>
+
+          <div class="statistic-info">
+            <div class="statistic-header">Total Products</div>
+            <div class="statistic-number">10.820</div>
+
+            <div class="statistic-bottom">
+              <a href="#" class="link">+ Add new Product</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="statistic">
+          <div class="statistic-graphics">
+            <div class="statistic-icon primary-color">
+              <ion-icon name="people"></ion-icon>
+            </div>
+            <div class="statistic-graph-container">
+              <div class="statistic-graph"></div>
+            </div>
+          </div>
+
+          <div class="statistic-info">
+            <div class="statistic-header">Total Users</div>
+            <div class="statistic-number">8.425</div>
+
+            <div class="statistic-bottom">New user noted every week</div>
+          </div>
+        </div>
+
+        <div class="statistic">
+          <div class="statistic-graphics">
+            <div class="statistic-icon color-green-light">
+              <ion-icon name="cart"></ion-icon>
+            </div>
+            <div class="statistic-graph-container">
+              <div class="statistic-graph"></div>
+            </div>
+          </div>
+
+          <div class="statistic-info">
+            <div class="statistic-header">Total Sells</div>
+            <div class="statistic-number">1.028.623</div>
+
+            <div class="statistic-bottom">Start from 1 Jan 2021</div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Icons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

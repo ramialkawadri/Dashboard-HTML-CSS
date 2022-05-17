@@ -1,0 +1,245 @@
+body {
+  display: grid;
+  grid-template-columns: 10rem 1fr;
+  grid-template-rows: 8rem 1fr;
+  min-height: 100vh;
+}
+
+/********************/
+/* Navigation */
+/********************/
+.navigation-bar {
+  grid-column: 1/-1;
+  border-bottom: 1px solid rgba(118, 118, 118, 0.1);
+  z-index: 2;
+
+  display: grid;
+  grid-template-columns: 10rem 1fr;
+}
+
+.navigation-bar .logo {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.navigation-bar .logo::before,
+.navigation-bar .logo::after {
+  content: "";
+  width: 2.4rem;
+  height: 2.4rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.navigation-bar .logo::before {
+  transform: translate(-50%, -50%);
+  background-color: #caddfc;
+}
+
+.navigation-bar .logo::after {
+  background-color: #428efd;
+  transform: translate(-30%, -30%);
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3.2rem;
+}
+
+.nav-user {
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+  color: #b2b6c0;
+  cursor: pointer;
+}
+
+.nav-user * {
+  transition: all 0.3s;
+}
+
+.nav-user *:hover {
+  color: #333;
+}
+
+.nav-user-icon {
+  font-size: 3rem;
+  position: relative;
+}
+
+.nav-user-icon::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #fd774f;
+}
+
+.nav-user-profile {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  font-size: 2.4rem;
+}
+
+.nav-profile-picture {
+  width: 4.8rem;
+  height: 4.8rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/********************/
+/* Menu */
+/********************/
+.main-menu {
+  font-size: 2.4rem;
+  box-shadow: 0 0 2px rgba(118, 118, 118, 0.1);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4.8rem 0;
+  color: #b2b6c0;
+
+  z-index: 1;
+}
+
+.main-menu .main-menu-list {
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+  gap: 4.8rem;
+}
+
+.main-menu .main-menu-list li {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.main-menu .main-menu-list li:hover {
+  color: #333;
+}
+
+.main-menu .main-menu-list li.primary-color:hover {
+  color: #3572ca;
+}
+
+/********************/
+/* Dashboard */
+/********************/
+.dashboard {
+  background-color: #f8f8f8;
+  padding: 4rem;
+}
+
+/* Statistics */
+.statistics {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 2.4rem;
+}
+
+.statistic {
+  color: #333;
+  background-color: #fff;
+  padding: 1.6rem;
+  transition: all 0.4s;
+}
+
+.statistic:hover {
+  transform: translateY(-1rem);
+}
+
+.statistic-graphics {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.statistic-icon {
+  padding: 1.2rem;
+  background-color: #f4f9f4;
+  font-size: 3rem;
+}
+
+.statistic-graph-container {
+  filter: drop-shadow(6px 3px 4px rgba(0, 0, 0, 0.4));
+}
+
+.statistic-graph {
+  width: 9.6rem;
+  height: 100%;
+  background-color: #8bc48a;
+
+  mask: url("../img/graph.svg") no-repeat center;
+  mask-size: 100%;
+}
+
+.graph-down {
+  background-color: red;
+  mask: url("../img/graph-down.svg") no-repeat center;
+  mask-size: 100%;
+}
+
+.statistic-info {
+  margin-top: 2.4rem;
+}
+
+.statistic-header {
+  font-size: 1.6rem;
+  margin-bottom: 0.8rem;
+  color: #9fa2aa;
+}
+
+.statistic-number {
+  font-size: 3.6rem;
+  padding-bottom: 2.4rem;
+  color: #251d50;
+  border-bottom: 1px solid #9fa2aa;
+  margin-bottom: 1.6rem;
+}
+
+.statistic-bottom {
+  font-size: 1.6rem;
+  color: #9fa2aa;
+}
+
+.primary-statistic {
+  background-color: #428efd;
+}
+
+.primary-statistic .statistic-header,
+.primary-statistic .statistic-number,
+.primary-statistic .statistic-icon {
+  color: #fff;
+}
+
+.primary-statistic .statistic-bottom {
+  color: #dbeafe;
+}
+
+.primary-statistic .statistic-icon {
+  background-color: #559afe;
+}
+
+.primary-statistic .statistic-graph-container {
+  filter: drop-shadow(6px 3px 4px rgba(255, 255, 255, 0.6));
+}
+
+.primary-statistic .statistic-graph {
+  background-color: #fff;
+}
+
+.primary-statistic .statistic-number {
+  border-bottom-color: #fff;
+}
