@@ -92,10 +92,13 @@ a:visited {
   color: #85baba;
 }
 
+.color-red {
+  color: #e03131 !important;
+}
+
 .header-primary {
   font-size: 3rem;
   font-weight: 500;
-  margin-bottom: 3.2rem;
   letter-spacing: 1px;
   color: #251d50;
 }
