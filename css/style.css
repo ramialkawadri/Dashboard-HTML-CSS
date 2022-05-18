@@ -1,7 +1,7 @@
 body {
   display: grid;
   grid-template-columns: 10rem 1fr;
-  grid-template-rows: 8rem calc(100vh - 8rem);
+  grid-template-rows: 8rem auto;
   height: 100vh;
 }
 
@@ -144,6 +144,7 @@ body {
 /********************/
 .dashboard {
   background-color: #f8f8f8;
+  overflow: scroll;
   padding: 4rem;
   display: flex;
   flex-direction: column;
@@ -254,10 +255,10 @@ body {
 
 .dashboard-main {
   flex-shrink: 1;
-  overflow: scroll;
   display: grid;
   grid-template-columns: 65fr 35fr;
   column-gap: 2.4rem;
+  align-items: start;
 }
 
 .product-table {
@@ -265,9 +266,6 @@ body {
 
   display: flex;
   flex-direction: column;
-  overflow: scroll;
-  height: 100%;
-  position: relative;
 }
 
 .product-table-row {
@@ -293,9 +291,6 @@ body {
 .products-table-head {
   background-color: #fff;
   font-weight: 700;
-
-  position: sticky;
-  top: 0;
 }
 
 .product-number-image {
@@ -317,4 +312,123 @@ body {
 
 .product-status {
   color: #3572ca;
+}
+
+.graphs {
+  background-color: #fff;
+  padding: 1.6rem;
+  font-size: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.graph-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.graph-title {
+  font-size: 3.2rem;
+  color: #251d50;
+}
+
+.graph-time {
+  color: #9fa2aa;
+  cursor: pointer;
+}
+
+.graph-descriptions {
+  display: flex;
+  gap: 3.2rem;
+  color: #251d50;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.graph-description {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+}
+
+.graph-color-box {
+  background-color: red;
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.graph-color--orange {
+  background-color: #fe764b;
+}
+
+.graph-color--light-green {
+  background-color: #83bcbd;
+}
+
+.graph-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  font-size: 2.4rem;
+  color: #9fa2aa;
+  padding-bottom: 1.6rem;
+
+  position: relative;
+}
+
+.graph-bars::before,
+.graph-bars::after {
+  content: "";
+  background-color: #b7bbc4;
+  position: absolute;
+  left: 2em;
+  bottom: 0;
+}
+
+.graph-bars::before {
+  transform: translate(-50%, 0);
+  width: 2px;
+  top: 0;
+}
+
+.graph-bars::after {
+  height: 2px;
+  right: 0;
+}
+
+.graph-bar {
+  display: grid;
+  grid-template-columns: 1em 1fr;
+  column-gap: 2.4rem;
+  align-items: center;
+
+  position: relative;
+}
+
+.graph-bar-title::before {
+  content: "";
+  width: 1rem;
+  background-color: #b7bbc4;
+  height: 0.2rem;
+
+  position: absolute;
+  left: calc(2em - 1rem);
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.graph-bar-boxes {
+  display: flex;
+}
+
+.graph-bar-box {
+  height: 1.6rem;
+  transition: all 0.3s;
+}
+
+.graph-bar-box:hover {
+  z-index: 1;
+  box-shadow: 0 0 0 4px #bfc2cc;
 }
