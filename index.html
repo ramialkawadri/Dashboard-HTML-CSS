@@ -4,18 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="The dashboard of your dream" />
+
     <title>Dashboard</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap"
       rel="stylesheet"
     />
 
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
   </head>
   <body>
     <!-- Nav -->
@@ -28,10 +31,18 @@
           </div>
           <input type="text" placeholder="Search for transasction, item, etc" />
           <button class="btn btn--primary">Search</button>
+
+          <button class="nav-search-close">
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
         </div>
 
         <!-- The right side -->
         <div class="nav-user">
+          <div class="nav-user-icon nav-search-icon">
+            <ion-icon name="search-outline"></ion-icon>
+          </div>
+
           <div class="nav-user-icon">
             <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
           </div>
@@ -412,5 +423,7 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+
+    <script src="js/script.js"></script>
   </body>
 </html>

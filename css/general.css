@@ -1,6 +1,13 @@
 /*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.12,
+* Autoprefixer: v10.4.4
+* Browsers: last 4 version
+*/
+
+/*
 --------- Typography
-- Font weights: 400, 700, 900
+- Font weights: 400, 700
 
 - Line heights:
 Default: 1
@@ -46,6 +53,7 @@ Other:
 * {
   padding: 0;
   margin: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -57,6 +65,22 @@ body {
   font-family: "Source Sans Pro", sans-serif;
   color: #333;
   line-height: 1;
+}
+
+input::-webkit-input-placeholder {
+  color: #b7bdc8;
+}
+
+input::-moz-placeholder {
+  color: #b7bdc8;
+}
+
+input:-ms-input-placeholder {
+  color: #b7bdc8;
+}
+
+input::-ms-input-placeholder {
+  color: #b7bdc8;
 }
 
 input::placeholder {
@@ -72,6 +96,8 @@ a:visited {
 .link:link,
 .link:visited {
   color: #599cfe;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
   transition: all 0.3s;
 }
 
@@ -109,6 +135,8 @@ a:visited {
   cursor: pointer;
   font-size: 1.6rem;
   letter-spacing: 1px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
   transition: all 0.3s;
 }
 
@@ -122,8 +150,12 @@ a:visited {
 }
 
 .input-with-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   border: 1px solid transparent;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
   transition: all 0.3s;
 }
 
@@ -152,7 +184,11 @@ a:visited {
 }
 
 .input-with-icon .input-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   padding-left: 1.2rem;
   color: #b7bdc8;

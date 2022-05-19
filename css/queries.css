@@ -1,0 +1,105 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.12,
+* Autoprefixer: v10.4.4
+* Browsers: last 4 version
+*/
+
+/* 1500px */
+@media (max-width: 94em) {
+  .product-image {
+    width: 4.8rem;
+    height: 4.8rem;
+  }
+}
+
+/* 1300px */
+@media (max-width: 82em) {
+  .statistics {
+    -ms-grid-columns: (1fr) [2];
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 2.4rem;
+  }
+
+  .dashboard-main {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    row-gap: 2.4rem;
+  }
+
+  .graphs {
+    -ms-grid-row: 1;
+    grid-row: 1;
+  }
+}
+
+/* 900px */
+@media (max-width: 57em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+/* 700px */
+@media (max-width: 44em) {
+  .statistics {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .nav-container {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: end;
+  }
+
+  .input-with-icon {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    z-index: 9999;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .input-with-icon * {
+    height: 6.4rem;
+  }
+
+  .nav-search-icon {
+    display: block;
+  }
+
+  .product-table-row {
+    -ms-grid-columns: 0.75fr 1.6rem 2.5fr 1.6rem 1fr 1.6rem 1fr 1.6rem 1fr;
+    grid-template-columns: 0.75fr 2.5fr 1fr 1fr 1fr;
+    -webkit-column-gap: 1.6rem;
+    -moz-column-gap: 1.6rem;
+    column-gap: 1.6rem;
+  }
+
+  .product-number-image {
+    gap: 2.4rem;
+  }
+}
+
+/* 550px */
+@media (max-width: 35em) {
+  .main-menu {
+    display: none;
+  }
+
+  .dashboard {
+    grid-column: 1/-1;
+  }
+}
