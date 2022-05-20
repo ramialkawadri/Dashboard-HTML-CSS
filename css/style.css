@@ -1,10 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.12,
-* Autoprefixer: v10.4.4
-* Browsers: last 4 version
-*/
-
 body {
   display: -ms-grid;
   display: grid;
@@ -406,6 +399,8 @@ body > *:nth-child(4) {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  padding: 1.6rem;
+  padding-top: 0;
 }
 
 .product-table-row {
@@ -424,7 +419,7 @@ body > *:nth-child(4) {
   color: #251d50;
   background-color: #f5f7f9;
   padding: 1.6rem 3.2rem;
-  margin: 1.6rem;
+  /* margin: 1.6rem; */
   line-height: 1.8;
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
@@ -439,6 +434,17 @@ body > *:nth-child(4) {
 .products-table-head {
   background-color: #fff;
   font-weight: 700;
+}
+
+.product-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 2.4rem;
 }
 
 .product-number-image {
@@ -469,7 +475,7 @@ body > *:nth-child(4) {
 
 .graphs {
   background-color: #fff;
-  padding: 1.6rem;
+  padding: 2.4rem;
   font-size: 1.6rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -494,7 +500,7 @@ body > *:nth-child(4) {
 }
 
 .graph-title {
-  font-size: 3.2rem;
+  font-size: 2.4rem;
   color: #251d50;
 }
 
@@ -546,7 +552,7 @@ body > *:nth-child(4) {
   -ms-flex-direction: column;
   flex-direction: column;
   gap: 2.4rem;
-  font-size: 2.4rem;
+  font-size: 1.6rem;
   color: #9fa2aa;
   padding-bottom: 1.6rem;
 
@@ -578,8 +584,8 @@ body > *:nth-child(4) {
 .graph-bar {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1em 2.4rem 1fr;
-  grid-template-columns: 1em 1fr;
+  -ms-grid-columns: 0.5em 2.4rem 1fr;
+  grid-template-columns: 0.5em 1fr;
   -webkit-column-gap: 2.4rem;
   -moz-column-gap: 2.4rem;
   column-gap: 2.4rem;
